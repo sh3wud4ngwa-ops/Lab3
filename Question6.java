@@ -13,14 +13,10 @@ public class Question6 {
         System.out.print("Enter y coordinate: ");
         double y = sc.nextDouble();
 
-        double distance = x * x + y * y;
-
         if (radius < 0) {
             System.out.println("Invalid radius");
-        } else if (distance < radius * radius) {
+        } else if (x * x + y * y < radius * radius) {
             System.out.println("The point is inside the circle");
-        } else if (distance == radius * radius) {
-            System.out.println("The point is on the circle");
         } else {
             System.out.println("The point is outside the circle");
         }
